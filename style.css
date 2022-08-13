@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #050E12;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+#cabecera{
+    background: #1A1F38;
+    padding: 0 1rem;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.network {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.network img {
+    cursor: pointer;
+}
+.call-to-action {
+    border-radius: 20px;
+    background-color: #008DBC;
+    border: none;
+    font-size: 1rem;
+    height: 40px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.call-to-action:hover {
+    cursor: pointer;
+}
+.logo {
+    
+    width: 30px;
+    height: 20px;
+}
+.input-search {
+    background-color: #C4C4C4;
+    opacity: 0.3;
+    border: none;
+}
+.movies {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+}
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+}
+.movies-card {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.movies-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+.image-card {
+    width: 100%;
+    background-position: center;
+}
+div {
+    position:relative;/*div con posición inicial*/
+    font-size:25px;/*tamaño de letra*/
+    margin:0px; /* margen 0,0 superior izquierda*/
+    overflow: auto; /*desbordamiento : automático;*/
+    /* resize: both; *//*cambiar el tamaño : ambos;*/
+}
+
+
+#menu{
+    float: left; /*permite acomodar al lado del div otros div*/
+    width: 500px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#contenido{
+    float: left;
+    width: 100%; 
+    background-image: url(./assets/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.hero-main {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.movie-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}
+#pie{
+  clear: both;
+  width: 100%;
+  position: relative;
+    bottom: 0;
+}			
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50rem;
+    height: 100vh;
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .nav {
+    background-color: transparent;
+    height: 8rem;
+    /* box-shadow: -4px 13px 16px -2px rgba(0,0,0,0.15); */
+  }
+  .main-div {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+  /* Media Queries */
+  footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #1A1F38;
+  }
+  .footer-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+  }
+  @media (max-width: 1060px) {
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 8rem;
+        bottom: 0;
+        background: var(--marine-water-color);
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        z-index: 3;
+    }
+    .nav-input:checked + .nav-menu {
+        clip-path: circle(100% at center);
+    }
+    .nav-item {
+      color: var(--color-white);
+    }
+  
+  }
+  
+ 
